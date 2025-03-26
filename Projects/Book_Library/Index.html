@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📚 Books Library</h1>
+
+    <header>
+        <input type="text" id="searchInput" placeholder="Search by title or author" oninput="searchBooks()">
+        <select id="sortOptions" onchange="sortBooks(this.value)">
+            <option value="title">Sort by Title</option>
+            <option value="publishedDate">Sort by Published Date</option>
+        </select>
+        <button onclick="toggleView('grid')">Grid View</button>
+        <button onclick="toggleView('list')">List View</button>
+    </header>
+
+    <div id="booksContainer" class="grid"></div>
+
+    <button id="loadMoreBtn" onclick="loadMoreBooks()">Load More</button>
+    <script src="script.js"></script>
+</body>
+</html>

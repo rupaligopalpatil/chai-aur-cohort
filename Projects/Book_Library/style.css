@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+h1{
+    color: #fff;
+}
+
+body {
+    background: #555;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    background-color: #dd4779;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b52454;
+}
+
+#booksContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#booksContainer.list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book {
+    background: #ffcad7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.list .book{
+    background: #ffcad7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+}
+.list .book .hgtDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list .book img{
+    width: auto;
+    height: auto;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    width: auto;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.book h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.book p {
+    font-size: 14px;
+    color: #555;
+}
+
+.book button {
+    background-color: #ae2792;
+    margin-top: 10px;
+}
+
+.book button:hover {
+    background-color: #95227d;
+}
+
+#loadMoreBtn {
+    margin-top: 20px;
+    background-color: #dd4779;
+}
+
+#loadMoreBtn:hover {
+    background-color: #b52454;
+}
+.hgtDiv{
+    height: 85%;
+}
